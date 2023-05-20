@@ -1,0 +1,328 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+/* header {
+  min-width: 320px;
+  background-color: red;
+}
+
+@media (min-width: 767px) {
+  header {
+    background-color: blue;
+    min-width: 768px;
+  }
+}
+
+@media (max-width: 380px) {
+  .img {
+    max-width: 380px;
+  }
+} */
+
+.header {
+  width: 480px;
+  height: 60px;
+  background: #ffffff;
+
+  padding: 16px 15px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.burger {
+  width: 40px;
+  height: 40px;
+}
+
+.logo {
+  width: 134px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+
+  color: black;
+}
+
+.WEB {
+  color: #2196f3;
+}
+
+.nav {
+  display: none;
+}
+
+.contcts {
+  display: none;
+}
+.img1{
+  display: none;
+}
+.img2{
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .header {
+    margin: 0 10px;
+    margin: 0 auto;
+
+    width: 768px;
+    height: 80px;
+
+    background: #ffffff;
+
+    padding: 26px 15px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .logo {
+    margin-right: 87px;
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .contcts {
+    display: block;
+  }
+
+  .nav-list {
+    display: flex;
+    margin-right: 95px;
+  }
+
+  .nav__list--item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .gmailandtell-div{
+    display: none;
+  }
+  .contacts-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .img1{
+    display: none;
+  }
+  .img2{
+    display: none;
+  }
+  .nav-link {
+    display: block;
+    height: 16px;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+
+    color: #212121;
+  }
+
+  .contacts-link {
+    display: block;
+    height: 14px;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+
+    letter-spacing: 0.02em;
+
+    color: #757575;
+  }
+}
+
+/* доповни медіа правило */
+
+@media (min-width: 1600px) {
+  .header {
+    margin: 0 10px;
+    margin: 0 auto;
+
+    /*min-width: 500px;
+    max-width: 767px;*/
+
+    height: 80px;
+
+    
+
+    padding: 26px 215px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .img1{
+    display: block;
+    height: 12px;
+    width: 16px;
+
+
+  }
+  .img2{
+    display: block;
+  }
+  .contcts{
+    display: flex;
+  }
+  .contcts{
+    display: none;
+  }
+  .icon{
+    margin-right: 10px;
+  }
+  .gmailandtell-div{
+    display: flex;
+  }
+  
+  .gmailandtell-div{
+    margin-top: 28px;
+  }
+  
+  .gmail{
+    width: 135px;
+    height: 16px;
+  }
+  .gmail-div{
+    width: 161px;
+    height: 16px;
+  }
+  .tell-div{
+    width: 142px;
+    height: 16px;
+  }
+}
+/*@media (min-width: 500px) and (max-width: 767px) {
+  .header {
+    margin: 0 10px;
+    margin: 0 auto;
+
+    min-width: 500px;
+    max-width: 767px;
+
+    height: 80px;
+
+    background: red;
+
+    padding: 26px 15px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}*/
+.icon{
+  color: #757575;
+
+}
+.gmailandtell-div{
+  color: #757575;
+}
+.icon-envelope{
+  height: 12px;
+  width: 16px;
+
+
+}
+.gmail{
+  color: #757575;
+  font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+
+}
+.tell{
+  color: #757575;
+  font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+}
+.gmailandtell-div{
+  margin-top: 0px;
+}
